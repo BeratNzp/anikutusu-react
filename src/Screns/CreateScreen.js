@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
+import { SubmitMemory } from "../components/SubmitMemory";
 
 export const CreateScreen = () => {
   return (
-    <div>
-        <h1>Create memory</h1>
-    </div>
-  )
-}
+    <>
+      <Container>
+        <SubmitMemory />
+      </Container>
+    </>
+  );
+};

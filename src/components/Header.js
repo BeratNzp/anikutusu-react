@@ -1,9 +1,31 @@
-import React from 'react'
+import React from "react";
+
+import {
+  Navbar,
+  Nav,
+  Button,
+} from "react-bootstrap";
+
+import LinkContainer from "react-router-bootstrap/LinkContainer";
 
 export const Header = () => {
   return (
-    <div>
-        <h1>Header</h1>
-    </div>
-  )
-}
+    <header>
+      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+        <LinkContainer to="/">
+          <Navbar.Brand href="#">Anı Kutusu</Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
+            <LinkContainer to="/create">
+              <Nav.Link>
+                <Button variant="outline-info">Bir anı paylaş</Button>
+              </Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
+  );
+};
