@@ -17,7 +17,6 @@ export const SubmitMemory = () => {
         e.preventDefault()
 
         api.createMemory(memoryData)
-        console.log(e)
     }}>
         <Form.Group>
             <h1>Bir anı yarat</h1>
