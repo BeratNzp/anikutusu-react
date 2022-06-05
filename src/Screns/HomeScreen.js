@@ -21,7 +21,8 @@ export const HomeScreen = () => {
     <>
       <h1>En güncel anılar</h1>
       {!memories.length ? (
-      <Spinner animation="border" /> ) : (
+      <Spinner animation="border" />
+      ) : (
       <Row>
           {memories.map((memory) => (
                   <Col
@@ -35,9 +36,8 @@ export const HomeScreen = () => {
                       <Memory memory={memory} />
                   </Col>
               ))}
-          }
       </Row>
-      }
+      )}
     </>
   );
 };
