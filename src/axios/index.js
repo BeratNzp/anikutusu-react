@@ -8,4 +8,4 @@ export const createMemory = async (newMemory) => {
   await api.post("/memories", newMemory);
 };
 
-export const deleteMemory = async (id) => await api.delete(`/memories/${id}!`);
+export const deleteMemory = async (id) => await api.delete(`/memories/${id}`);
