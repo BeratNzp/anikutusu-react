@@ -11,7 +11,6 @@ export const HomeScreen = () => {
   useEffect(() => {
     const getMemories = async () => {
       const { data } = await fetchMemories();
-      console.log(data);
       setMemories(data);
     };
     getMemories();
