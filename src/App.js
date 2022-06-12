@@ -8,6 +8,7 @@ import { CreateScreen } from "./Screns/CreateScreen";
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { UpdateScreen } from "./Screns/UpdateScreen";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/create" element={<CreateScreen />} />
+        <Route path="/update/:id" element={<UpdateScreen />} />
       </Routes>
       </main>
       <Footer />
